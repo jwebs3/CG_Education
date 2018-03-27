@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+}
+
+*/Text Styles*/
+
+h1 {
+  font-family: 'PT Sans Narrow', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1em;
+  color: #323232;
+  text-align: left;
+  padding: 0px 0 0px 0;
+  margin: 0px;
+}
+h2 {
+  font-family: 'PT Sans Narrow', bold;
+  text-transform: uppercase;
+  text-shadow:0 0 1px transparent;
+  font-size: .75em;
+  color: #00897f;
+  text-align: center;
+  margin: 0px 0 0px 0;
+}
+h3 {
+  font-family: 'PT Serif';
+  text-shadow:0 0 1px transparent;
+  font-size: .5em;
+  color: #323232;
+  text-align: ;
+  margin: 0px;
+}
+p {
+  font-family: 'PT Serif';
+  text-shadow:0 0 1px transparent;
+  font-size: .875em;
+  color: #323232;
+  line-height: 1.75em;
+  text-align: left;
+}
+.topnav #main {
+  font-family: 'PT Sans Narrow', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1.5em;
+  color: #323232;
+}
+.topnav2 #side {
+  font-family: 'PT Sans', bold;
+  text-transform: uppercase;
+  text-shadow:0 0 1px transparent;
+  font-size: 0.9em;
+  color: #323232;
+}
+
+
+*/Page Styles*/
+
+.topnav {
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-bottom: 5px solid #000;
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.topnav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  border-bottom: 5px solid #000;
+}
+.topnav2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  border-bottom: 5px solid #000;
+}
+.topnav #main {
+
+}
+.topnav2 #side {
+  margin: 10px;
+  margin-right: 5px;
+  margin-left: 6px;
+  text-align: left;
+}
+
+.teacherline1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.teacherline2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+}
+.teacherbox {
+  background-color: #008B8B;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 250px;
+  width: 30%;
+  border: 2px solid #000;
+  margin: 1px 1px 1px 1px;
+  padding: 30px 30px 30px 30px;
+}
+.teachername {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+.teachercourses {
+  display: inline-block;
+  border-right: 2px solid #000;
+  padding: ;
+}
+.teacherrating {
+ padding: ;
+}
+
+.studentline1 {
+
+}
+.studentbox {
+
+}
+.studentname {
+
+}
+.studentinfo{
+
+}
+
+.coursesline1 {
+
+}
+.coursesline2 {
+
+}
+.coursesline3{
+
+}
+.coursesbox {
+
+}
+
+
+*/Image Styles*/
+
+}
+.teacherimage #circleimage {
+  border-radius: 50%;
+  width: 20%;
+  height: 70px;
+  margin: 0 0px 0 0px;
+}
+.studentname #studentimage {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
