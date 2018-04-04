@@ -56,15 +56,13 @@ p {
 */Page Styles*/
 
 .topnav {
-  display: block;
-  box-sizing: border-box;
   padding: 10px 10px 10px 10px;
-  border-bottom: 5px solid #000;
+  text-decoration: none;
+  box-sizing: border-box;
   height: 80px;
   width: 100%;
   margin: 0;
   overflow: hidden;
-  border-bottom: 5px solid #000;
 }
 .topnav .main {
   list-style-type: none;
