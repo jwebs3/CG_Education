@@ -1,12 +1,11 @@
 body {
-  margin: 0;
-  background-color: #85929E;
+  background-color: ;
 }
 
-*/Text Styles*/
+/*Text Styles*/
 
 h1 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1.5em;
   color: #323232;
@@ -15,7 +14,7 @@ h1 {
   margin: 0px;
 }
 h2 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #323232;
@@ -23,7 +22,7 @@ h2 {
   margin: 0px 0 0px 0;
 }
 h3 {
-  font-family: 'PT Sans Narrow';
+  font: 'PT Sans Narrow';
   text-shadow:0 0 1px transparent;
   font-size: .75em;
   color: #323232;
@@ -32,60 +31,40 @@ h3 {
   display: inline;
 }
 p {
-  font-family: 'PT Serif';
+  font: 'PT Serif';
   text-shadow:0 0 1px transparent;
   font-size: .875em;
   color: #323232;
   line-height: 1.75em;
   text-align: left;
 }
-#mainnav {
-  font-family: 'PT Sans', bold;
+.topnav {
+  font: 'PT Sans', bold;
   text-shadow:0 0 1px transparent;
-  font-size: 1em;
+  font-size: 1.75em;
   color: #323232;
-}
-#sidenav {
-  font-family: 'PT Sans', bold;
-  text-transform: uppercase;
-  text-shadow:0 0 1px transparent;
-  font-size: 1em;
-  color: #323232;
-  justify-content: space-around;
-}
-#teacher {
-  list-style-type: none;
-}
-#courses {
-  list-style-type: none;
-}
-#rating {
-  list-style-type: none;
+  text-decoration: none;
 }
 
-*/Page Styles*/
+/*Page Styles*/
 
 .topnav {
-  display: flex;
-  padding: 10px 10px 10px 10px;
-  text-decoration: none;
+  display: block;
+  margin: 10px;
   box-sizing: border-box;
-  height: 80px;
+  height: 40px;
   width: 100%;
   margin: 5px;
-  border-bottom: 5px solid #000;
+  border-bottom: 2px solid #000;
   padding: 0;
   overflow: hidden;
 }
-#main {
+.topnav .mainnav {
   list-style-type: none;
-  display: flex;
   float: left;
 }
-#side {
+.topnav .sidenav {
   list-style-type: none;
-  display: flex;
-  align-items: flex-end;
   float: right;
 }
 .teacherline1 {
@@ -93,6 +72,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  margin: 2%;
 }
 .teacherline2 {
   display: flex;
@@ -111,7 +91,7 @@ p {
   margin: 1px 1px 1px 1px;
 }
 .teacherinfo {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -129,44 +109,114 @@ p {
   display: inline-flex;
   padding: ;
 }
-
 .studentline1 {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2%;
 }
 .studentbox {
-
+  background-color: #008B8B;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 250px;
+  width: 30%;
+  border: 2px solid #000;
+  margin: 1px 1px 1px 1px;
+}
+.studentinfo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  border-bottom: 2px solid #000;
+}
+.studentimage {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .studentname {
-
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.studentinfo{
-
+.studentinfo2 {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 130px;
 }
-
-.coursesline1 {
-
+.studentinfobox1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: ;
+  width: 40%;
+}
+.studentinfobox2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: ;
+  list-style-type: none;
+  width: 60%;
+}
+.coursesline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2%;
 }
 .coursesline2 {
-
-}
-.coursesline3{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 2%;
+  margin-left: 4.5%;
 }
 .coursesbox {
-
+  background-color: #008B8B;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 90px;
+  width: 45%;
+  border: 2px solid #000;
+  margin: 1px 1px 1px 1px;
+  padding: 10px;
+}
+.coursetype {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 39%;
+  border-right: 2px solid #000;
+}
+.courseinfo {
+  display: inline-flex;
+  justify-content: center;
+  width: 59%;
+}
+#teacher {
+  list-style-type: none;
+}
+#courses {
+  list-style-type: none;
+}
+#rating {
+  list-style-type: none;
+}
+#student {
+  list-style-type: none;
 }
 
+/*Image Styles*/
 
-*/Image Styles*/
-
-.teacherimage #circleimage {
+#circleimage {
   border-radius: 50%;
   width: 20%;
   height: 70px;
   margin: 0 0px 0 0px;
-}
-.studentname #studentimage {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
 }
