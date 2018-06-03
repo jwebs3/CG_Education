@@ -46,14 +46,20 @@ function getRatingAverage(teacherRating) {
 }
 
 function addTeacherRating () {
-  var teacherRating = [3.4, 5.0, 4.2];
   teacherRating.push(4.5);
   console.log(teacherRating);
 }
 
 var review = window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
 
-if (review >= 0.0; review <= 5.0); //review between 0 and 5
+if (review >= 0.0; review <= 5.0) {
+  teacherRating.push(review);
+  alert("Thanks for your review!" var Teacher "average rating is now" var avg ".");
+} else {
+  window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
+}
+
+//review between 0 and 5
 //add value to array
 //alert "Thanks for your review!"
 //else prompt again
