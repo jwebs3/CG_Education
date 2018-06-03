@@ -42,12 +42,12 @@ function getRatingAverage(teacherRating) {
       total += grades[i];
   }
   var avg = total / grades.length;
-  console.log(avg);
+  return avg;
 }
 
-function addTeacherRating () {
+function addTeacherRating (teacherRating) {
   teacherRating.push(4.5);
-  console.log(teacherRating);
+  return teacherRating;
 }
 
 var review = window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
@@ -59,7 +59,20 @@ if (review >= 0.0; review <= 5.0) {
   window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
 }
 
-//review between 0 and 5
-//add value to array
-//alert "Thanks for your review!"
-//else prompt again
+var courses [
+  [<course-title>, <course department>],
+  [<course-title>, <course department>],
+  [<course-title>, <course department>],
+  [<course-title>, <course department>],
+];
+var department = ;
+
+function (courses, department) {
+  if (courses[0][1] = department, courses[1][1], courses[2][1], courses[3][1]);
+  return(var coursesDepartment);
+  console.log(coursesDepartment);
+} else {
+  return undefined;
+}
+
+}
