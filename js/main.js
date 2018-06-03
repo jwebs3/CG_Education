@@ -52,27 +52,25 @@ function addTeacherRating (teacherRating) {
 
 var review = window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
 
-if (review >= 0.0; review <= 5.0) {
+if (review >= 0.0, review <= 5.0) {
   teacherRating.push(review);
-  alert("Thanks for your review!" var Teacher "average rating is now" var avg ".");
+  alert("'Thanks for your review!' var Teacher 'average rating is now' var avg '.'");
 } else {
   window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
 }
 
 var courses [
-  [<course-title>, <course department>],
-  [<course-title>, <course department>],
-  [<course-title>, <course department>],
-  [<course-title>, <course department>],
+  [Astronomy, Physics],
+  [Calculus, Physics],
+  [Statistics, Physics],
+  [WWII, History]
 ];
 var department = ;
 
 function (courses, department) {
-  if (courses[0][1] = department, courses[1][1], courses[2][1], courses[3][1]);
+  if (courses[0][1] = Physics, courses[1][1] = Physics, courses[2][1] = Physics, courses[3][1] = Physics);
   return(var coursesDepartment);
   console.log(coursesDepartment);
 } else {
-  return undefined;
-}
-
+  return undefined;}
 }
