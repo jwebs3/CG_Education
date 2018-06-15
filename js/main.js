@@ -96,20 +96,22 @@ var scienceClasses = ["Biology", "Chemistry", "Organic Chemistry"];
 var departmentChoice = window.prompt("What department are you looking for a course in?");
 
 function classReturn(departmentChoice) {
-if (departmentChoice == allDepartments[0]) {
+if (departmentChoice == allDepartments[0])
   alert(physicsClasses);
-} else if (departmentChoice == allDepartments[1]) {
+else if (departmentChoice == allDepartments[1])
   alert(historyClasses);
-} else if (departmentChoice == allDepartments[2]) {
+else if (departmentChoice == allDepartments[2])
   alert(englishClasses);
-} else if (departmentChoice == allDepartments[3]) {
-  alert(mathClasses)
-} else if (departmentChoice == allDepartments[4]) {
+else if (departmentChoice == allDepartments[3])
+  alert(mathClasses);
+else if (departmentChoice == allDepartments[4])
   alert(scienceClasses);
-} else
+else
   window.prompt("What department are you looking for a course in?");
 }
-
-
-
 //console.log(classReturn(departmentChoice));
+
+var graduation year = window.prompt("What is your graduation year?");
+var graduation month = window.prompt("What is your graduation month?");
+
+function 
