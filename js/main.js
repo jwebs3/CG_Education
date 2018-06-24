@@ -42,7 +42,7 @@ function getRatingAverage(teacherRating) {
       total += grades[i];
   }
   var avg = total / grades.length;
-  return avg;
+  console.log(avg);
 }
 
 function addTeacherRating (teacherRating) {
@@ -53,12 +53,12 @@ console.log(teacherRating);
 
 //var review = window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
 
-//if (review >= 0.0, review <= 5.0) {
-//  teacherRating.push(review);
-// alert("Thanks for your review!" + teacher + "average rating is now" + avg ".");
-//} else {
+if (review >= 0.0, review <= 5.0) {
+  teacherRating.push(review);
+  alert("Thanks for your review! + <teacher>'s + average rating is now + <avg>.");
+} else {
 //  window.prompt("We would like for you to review. Please enter a rating between 0.0-5.0?");
-//}
+}
 
 var courses = [["Astronomy", "Physics"], ["Calculus", "Physics"], ["Statistics", "Physics"], ["Writing", "English"]];
 var department = "Physics";
@@ -74,7 +74,7 @@ var departmentFilter = function filterByDepartment(courses, department) {
     return courses;
   } else {
     return undefined;
-  }
+  };
 var newCourses = courses.filter(departmentFilter);
 console.log(newCourses);
 
@@ -93,25 +93,111 @@ var englishClasses = ["Writing", "Linguistics", "Teaching"];
 var mathClasses = ["Algebra", "Geometry", "Calculus"];
 var scienceClasses = ["Biology", "Chemistry", "Organic Chemistry"];
 
-var departmentChoice = window.prompt("What department are you looking for a course in?");
+//var departmentChoice = window.prompt("What department are you looking for a course in?");
 
 function classReturn(departmentChoice) {
-if (departmentChoice == allDepartments[0])
-  alert(physicsClasses);
-else if (departmentChoice == allDepartments[1])
-  alert(historyClasses);
-else if (departmentChoice == allDepartments[2])
-  alert(englishClasses);
-else if (departmentChoice == allDepartments[3])
-  alert(mathClasses);
-else if (departmentChoice == allDepartments[4])
-  alert(scienceClasses);
-else
+  if (departmentChoice == allDepartments[0]) {
+    alert(physicsClasses);
+  }
+  else if (departmentChoice == allDepartments[1]) {
+    alert(historyClasses);
+  }
+  else if (departmentChoice == allDepartments[2]) {
+    alert(englishClasses);
+  }
+  else if (departmentChoice == allDepartments[3]) {
+    alert(mathClasses);
+  }
+  else if (departmentChoice == allDepartments[4]) {
+    alert(scienceClasses);
+  }
+  else {
   window.prompt("What department are you looking for a course in?");
+  }
 }
-//console.log(classReturn(departmentChoice));
 
-var graduation year = window.prompt("What is your graduation year?");
-var graduation month = window.prompt("What is your graduation month?");
+console.log(classReturn(departmentChoice));
 
-function 
+var gradYear = window.prompt("What is your graduation year?");
+var gradMonth = window.prompt("What is your graduation month?");
+
+var determineGradYear = function() {
+  if (gradYear >= 2018) {
+    welcomeCollegeStudent(Freshman);
+//    console.log("You are in college.");
+  }
+  else if (gradYear <= 2019) {
+    welcomeHighSchoolStudent(Freshman);
+//    console.log("You are in high school.");
+  }
+  else {
+    window.prompt("What is your graduation year?");
+  }
+};
+
+
+var welcomeCollegeStudent = function() {
+  alert("Welcome <studentClass>!");
+};
+
+var welcomeHighSchoolStudent = function() {
+  alert("You're still a <studentClass> in high school!");
+};
+
+//var gradMonth = ["December", "May"];
+//var gradYear = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025. 2026];
+var studentClass = ["Senior", "Junior", "Sophomore", "Freshman"];
+
+function welcomeStudentsByGraduatingClass(gradMonth, gradYear, welcome) {
+  if (gradMonth == "December", gradYear == 2018) {
+    welcomeCollegeStudent(studentClass[0]);
+  }
+  else if (gradMonth == "May", gradYear == 2019) {
+    welcomeCollegeStudent(studentClass[0]); //senior = december 2018, may 2019
+  }
+  else if (gradMonth == "December", gradYear == 2019) {
+    welcomeCollegeStudent(studentClass[1]);
+  }
+  else if (gradMonth == "May", gradYear == 2020) {
+    welcomeCollegeStudent(studentClass[1]);  // junior = december 2019, may 2020
+  }
+  else if (gradMonth == "December", gradYear == 2020) {
+    welcomeCollegeStudent(studentClass[2]);
+  }
+  else if (gradMonth == "May", gradYear == 2021) {
+    welcomeCollegeStudent(studentClass[2]);  //sophomore = december 2020, may 2021
+  }
+  else if (gradMonth == "December", gradYear == 2021) {
+    welcomeCollegeStudent(studentClass[3]);
+  }
+  else if (gradMonth == "May", gradYear == 2022) {
+    welcomeCollegeStudent(studentClass[3]); //freshman = december 2021, may 2022
+  }
+  else if (gradMonth == "December", gradYear == 2022) {
+    welcomeHighSchoolStudent(studentClass[0]);
+  }
+  else if (gradMonth == "May", gradYear == 2023) {
+    welcomeHighSchoolStudent(studentClass[0]);
+  }
+  else if (gradMonth == "December", gradYear == 2023) {
+    welcomeHighSchoolStudent(studentClass[1]);
+  }
+  else if (gradMonth == "May", gradYear == 2024) {
+    welcomeHighSchoolStudent(studentClass[1]);
+  }
+  else if (gradMonth == "December", gradYear == 2024) {
+    welcomeHighSchoolStudent(studentClass[2]);
+  }
+  else if (gradMonth == "May", gradYear == 2025) {
+    welcomeHighSchoolStudent(studentClass[2]);
+  }
+  else if (gradMonth == "December", gradYear == 2025) {
+    welcomeHighSchoolStudent(studentClass[3]);
+  }
+  else if (gradMonth == "May", gradYear == 2026) {
+    welcomeHighSchoolStudent(studentClass[3]);
+  }
+  else {
+    return undefined;
+  }
+} // erroring on this "unexpected" token?
